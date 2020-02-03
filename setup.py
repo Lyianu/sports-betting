@@ -7,19 +7,19 @@ import os
 from setuptools import find_packages, setup
 
 ver_file = os.path.join('sportsbet', '_version.py')
-with open(ver_file) as f:
-    exec(f.read())
+#with open(ver_file) as f:
+#    exec(f.read())
 
 DISTNAME = 'sports-betting'
 DESCRIPTION = 'Python sports betting toolbox.'
-with codecs.open('README.rst', encoding='utf-8-sig') as f:
-    LONG_DESCRIPTION = f.read()
+#with codecs.open('README.rst', encoding='utf-8-sig') as f:
+#    LONG_DESCRIPTION = f.read()
 MAINTAINER = 'G. Douzas'
 MAINTAINER_EMAIL = 'gdouzas@icloud.com'
 URL = 'https://github.com/AlgoWit/sports-betting'
 LICENSE = 'MIT'
 DOWNLOAD_URL = 'https://github.com/AlgoWit/sports-betting'
-VERSION = __version__
+VERSION = '__version__'
 INSTALL_REQUIRES = ['scipy>=0.17', 'numpy>=1.1', 'pandas==0.24.2', 'scikit-learn>=0.21', 'imbalanced-learn>=0.4.3', 'joblib==0.13.2', 'tqdm==4.28.1']
 CLASSIFIERS = ['Intended Audience :: Science/Research',
                'Intended Audience :: Developers',
